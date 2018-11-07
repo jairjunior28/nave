@@ -11,13 +11,13 @@
 <div class="main main-raised">
     <div class="container">
         <div class="section text-center">
-            <h2 class="title">Imágenes del producto "{{ $product->name }}"</h2>
+            <h2 class="title">Imagens do produto "{{ $product->name }}"</h2>
 
             <form method="post" action="" enctype="multipart/form-data">
                 {{ csrf_field() }}
                 <input type="file" name="photo" required>    
-                <button type="submit" class="btn btn-primary btn-round">Subir nueva imagen</button>
-                <a href="{{ url('/admin/products') }}" class="btn btn-default btn-round">Volver al listado de productos</a>
+                <button type="submit" class="btn btn-primary btn-round">Upload de nova imagem</button>
+                <a href="{{ url('/admin/products') }}" class="btn btn-default btn-round">Voltar a lista de produtos</a>
             </form>
 
             <hr>
@@ -32,9 +32,9 @@
                             {{ csrf_field() }}
                             {{ method_field('DELETE') }}
                             <input type="hidden" name="image_id" value="{{ $image->id }}">
-                            <button type="submit" class="btn btn-danger btn-round">Eliminar imagen</button>
+                            <button type="submit" class="btn btn-danger btn-round">Apagar imagem</button>
                             @if ($image->featured)
-                                <button type="button" class="btn btn-info btn-fab btn-fab-mini btn-round" rel="tooltip" title="Imagen destacada actualmente">
+                                <button type="button" class="btn btn-info btn-fab btn-fab-mini btn-round" rel="tooltip" title="Imagem destaque atualmente">
                                     <i class="material-icons">favorite</i>
                                 </button>
                             @else

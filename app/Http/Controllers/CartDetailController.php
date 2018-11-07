@@ -21,7 +21,7 @@ class CartDetailController extends Controller
     	$cartDetail->quantity = $request->quantity;
     	$cartDetail->save();
 
-		$notification = 'El producto se ha cargado a tu carrito de compras exitosamente!';
+		$notification = 'O produto foi carregado com sucesso no seu carrinho de compras!';
     	return back()->with(compact('notification'));
     }
 
@@ -32,7 +32,7 @@ class CartDetailController extends Controller
     	if ($cartDetail->cart_id == auth()->user()->cart->id)
     		$cartDetail->delete();
 
-    	$notification = 'El producto se ha eliminado del carrito de compras correctamente.';
+    	$notification = 'O produto foi removido do carrinho de compras corretamente.';
     	return back()->with(compact('notification'));
     }
 }

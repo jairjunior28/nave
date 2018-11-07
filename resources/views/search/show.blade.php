@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Resultados de búsqueda')
+@section('title', 'Resultados da busca')
 
 @section('body-class', 'profile-page')
 
@@ -35,11 +35,11 @@
             <div class="row">
                 <div class="profile">
                     <div class="avatar">
-                        <img src="/img/search.png" alt="Imagen de una lupa que representa a la página de resultados" class="img-circle img-responsive img-raised">
+                        <img src="/img/search.png" alt="" class="img-circle img-responsive img-raised">
                     </div>
 
                     <div class="name">
-                        <h3 class="title">Resultados de búsqueda</h3>
+                        <h3 class="title">Resultados da busca</h3>
                     </div>
 
                     
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="description text-center">
-                <p>Se encontraron {{ $products->count() }} resultados para el término {{ $query }}.</p>
+                <p>Foram encontrados {{ $products->count() }} resultados para o termo {{ $query }}.</p>
             </div>
 
             <div class="team text-center">

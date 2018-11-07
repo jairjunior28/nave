@@ -25,7 +25,7 @@
             {{--</ul>--}}
         </nav>
         <div class="copyright pull-right">
-            &copy; 2017.
+            Desenvolvido e mantido por Jair Júnior &copy; {{date('Y')}}. Todos os direitos reservados.
         </div>
     </div>
 </footer>

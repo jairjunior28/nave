@@ -12,16 +12,22 @@ class CartController extends Controller
 {
     public function update()
     {
-    	$client = auth()->user(); 
+    	$client = auth()->user();
+
+
     	$cart = $client->cart;
-    	$cart->status = 'Pending';
+    	$cart->status = 'Pendente';
     	$cart->order_date = Carbon::now();
     	$cart->save(); // UPDATE
 
+
     	$admins = User::where('admin', true)->get();
+
+
     	Mail::to($admins)->send(new NewOrder($client, $cart));
 
-    	$notification = 'Tu pedido se ha registrado correctamente. Te contactaremos pronto vía mail!';
+
+    	$notification = 'Seu pedido foi cadastrado com sucesso, assim que estiver pronto vc receberá um e-mail informando que o pedido está a caminho!';
     	return back()->with(compact('notification'));
     }
 }

@@ -10,7 +10,7 @@
     <div class="container">
 
         <div class="section">
-            <h2 class="title text-center">Registrar nuevo producto</h2>
+            <h2 class="title text-center">Cadastrar novo produto</h2>
 
             @if ($errors->any())
                 <div class="alert alert-danger">
@@ -28,14 +28,14 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="form-group label-floating">
-                            <label class="control-label">Nombre del producto</label>
+                            <label class="control-label">Nome do produto</label>
                             <input type="text" class="form-control" name="name" value="{{ old('name') }}">
                         </div>
                     </div>
 
                     <div class="col-sm-6">
                         <div class="form-group label-floating">
-                            <label class="control-label">Precio del producto</label>
+                            <label class="control-label">Preço do produto</label>
                             <input type="number" class="form-control" name="price" value="{{ old('price') }}">
                         </div>
                     </div>
@@ -44,14 +44,14 @@
                 <div class="row">
                     <div class="col-sm-6">
                          <div class="form-group label-floating">
-                            <label class="control-label">Descripción corta</label>
+                            <label class="control-label">Descrição resumida</label>
                             <input type="text" class="form-control" name="description" value="{{ old('description') }}"> 
                         </div>
                     </div>
 
                     <div class="col-sm-6">
                         <div class="form-group label-floating">
-                            <label class="control-label">Categoría del producto</label>
+                            <label class="control-label">Categoria do produto</label>
                             <select class="form-control" name="category_id">
                                 <option value="0">General</option>
                                 @foreach ($categories as $category)
@@ -66,7 +66,7 @@
 
                 <textarea class="form-control" placeholder="Descripción extensa del producto" rows="5" name="long_description">{{ old('long_description') }}</textarea>
 
-                <button class="btn btn-primary">Registrar producto</button>
+                <button class="btn btn-primary">Cadasstrar produto</button>
                 <a href="{{ url('/admin/products') }}" class="btn btn-default">Cancelar</a>
             </form>
         </div>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Listado de categorías')
+@section('title', 'Categorías')
 
 @section('body-class', 'product-page')
 
@@ -11,19 +11,19 @@
 <div class="main main-raised">
     <div class="container">
         <div class="section text-center">
-            <h2 class="title">Listado de categorías</h2>
+            <h2 class="title">Lista de categorias</h2>
 
             <div class="team">
                 <div class="row">
-                    <a href="{{ url('/admin/categories/create') }}" class="btn btn-primary btn-round">Nueva categoría</a>
+                    <a href="{{ url('/admin/categories/create') }}" class="btn btn-primary btn-round">Nova categoria</a>
 
                     <table class="table">
                         <thead>
                             <tr>
-                                <th class="col-md-2 text-center">Nombre</th>
-                                <th class="col-md-5 text-center">Descripción</th>
-                                <th>Imagen</th>
-                                <th class="text-right">Opciones</th>
+                                <th class="col-md-2 text-center">Nome</th>
+                                <th class="col-md-5 text-center">Descrição</th>
+                                <th>Imagem</th>
+                                <th class="text-right">Opções</th>
                             </tr>
                         </thead>
                         <tbody>

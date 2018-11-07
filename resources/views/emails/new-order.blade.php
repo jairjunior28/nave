@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Nuevo pedido</title>
+	<title>Novo pedido</title>
 </head>
 <body>
-	<p>Se ha realizado un nuevo pedido!</p>
-	<p>Estos son los datos del cliente que realizó el pedido:</p>
+	<p>Foi realizado um novo pedido através do site!</p>
+	<p>Dados do cliente:</p>
 	<ul>
 		<li>
-			<strong>Nombre:</strong>
+			<strong>Nome:</strong>
 			{{ $user->name }}
 		</li>
 		<li>
-			<strong>Username:</strong>
+			<strong>Usuário:</strong>
 			{{ $user->username }}
 		</li>
 		<li>
@@ -20,20 +20,20 @@
 			{{ $user->email }}
 		</li>
 		<li>
-			<strong>Teléfono:</strong>
+			<strong>Telefone:</strong>
 			{{ $user->phone }}
 		</li>
 		<li>
-			<strong>Dirección:</strong>
+			<strong>Endereço:</strong>
 			{{ $user->address }}
 		</li>
 		<li>
-			<strong>Fecha del pedido:</strong>
+			<strong>Data do pedido:</strong>
 			{{ $cart->order_date }}
 		</li>
 	</ul>
 
-	<p>Y estos son los detalles del pedido:</p>
+	<p>Detalhes do pedido:</p>
 	<ul>
 		@foreach ($cart->details as $detail)
 		<li>
@@ -43,12 +43,12 @@
 		@endforeach
 	</ul>
 	<p>
-		<strong>Importe que el cliente debe pagar:</strong> {{ $cart->total }}
+		<strong>Valor total do pedido:</strong> {{ $cart->total }}
 	</p>
 	<hr>
 	<p>
-		<a href="{{ url('/admin/orders/'.$cart->id) }}">Haz clic aquí</a>
-		para ver más información sobre este pedido.
+		<a href="{{ url('/admin/orders/'.$cart->id) }}">Clique aqui</a>
+		para ver mais informações sobre este pedido.
 	</p>
 </body>
 </html>

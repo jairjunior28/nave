@@ -28,13 +28,13 @@ class ProductController extends Controller
     {
         // validar
         $messages = [
-            'name.required' => 'Es necesario ingresar un nombre para el producto.',
-            'name.min' => 'El nombre del producto debe tener al menos 3 caracteres.',
-            'description.required' => 'La descripción corta es un campo obligatorio.',
-            'description.max' => 'La descripción corta solo admite hasta 200 caracteres.',
-            'price.required' => 'Es obligatorio definir un precio para el producto.',
-            'price.numeric' => 'Ingrese un precio válido.',
-            'price.min' => 'No se admiten valores negativos.'
+            'name.required' => 'É necessário informar um nome para o produto.',
+            'name.min' => 'O nome do produto deve ter no mínimo 3 caracteres.',
+            'description.required' => 'A descrição resumida é um campo obrigatório.',
+            'description.max' => 'A descrição resumida comporta no máximo 200 caracteres.',
+            'price.required' => 'É obrigatorio definir um preço para o produto.',
+            'price.numeric' => 'Informe um preço válido.',
+            'price.min' => 'Não são permitidos valores negativos.'
         ];
         $rules = [
             'name' => 'required|min:3',
@@ -65,13 +65,14 @@ class ProductController extends Controller
     public function update(Request $request, $id)
     {
         $messages = [
-            'name.required' => 'Es necesario ingresar un nombre para el producto.',
-            'name.min' => 'El nombre del producto debe tener al menos 3 caracteres.',
-            'description.required' => 'La descripción corta es un campo obligatorio.',
-            'description.max' => 'La descripción corta solo admite hasta 200 caracteres.',
-            'price.required' => 'Es obligatorio definir un precio para el producto.',
-            'price.numeric' => 'Ingrese un precio válido.',
-            'price.min' => 'No se admiten valores negativos.'
+            'name.required' => 'É necessário informar um nome para o produto.',
+            'name.min' => 'O nome do produto deve ter no mínimo 3 caracteres.',
+            'description.required' => 'A descrição resumida é um campo obrigatório.',
+            'description.max' => 'A descrição resumida comporta no máximo 200 caracteres.',
+            'price.required' => 'É obrigatorio definir um preço para o produto.',
+            'price.numeric' => 'Informe um preço válido.',
+            'price.min' => 'Não são permitidos valores negativos.'
+
         ];
         $rules = [
             'name' => 'required|min:3',

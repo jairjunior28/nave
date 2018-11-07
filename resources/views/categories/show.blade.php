@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="profile">
                     <div class="avatar">
-                        <img src="{{ $category->featured_image_url }}" alt="Imagen representativa de la categoría {{ $category->name }}" class="img-circle img-responsive img-raised">
+                        <img src="{{ $category->featured_image_url }}" alt="Imagem representativa da categoria {{ $category->name }}" class="img-circle img-responsive img-raised">
                     </div>
 
                     <div class="name">
@@ -87,7 +87,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Seleccione la cantidad que desea agregar</h4>
+        <h4 class="modal-title" id="myModalLabel">Selecione a quantidade que deseja dicionar</h4>
       </div>
       <form method="post" action="{{ url('/cart') }}">
         {{ csrf_field() }}
@@ -97,7 +97,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Cancelar</button>
-            <button type="submit" class="btn btn-info btn-simple">Añadir al carrito</button>
+            <button type="submit" class="btn btn-info btn-simple">Adicionar ao carrinho</button>
           </div>
       </form>
     </div>

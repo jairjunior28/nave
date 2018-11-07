@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Bienvenido a ' . config('app.name'))
+@section('title', 'Seja bem vindo a ' . config('app.name'))
 
 @section('body-class', 'landing-page')
 
@@ -68,13 +68,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <img src="{{ asset('/img/logo.png') }}" alt="Distribuidora Necochea Día" width="300">
-                <h1 class="title">Bienvenido a {{ config('app.name') }}.</h1>
-                <h4>Realiza pedidos en línea y te contactaremos para coordinar la entrega.</h4>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <h1 class="title">Bem vindo a {{ config('app.name') }}.</h1>
+                <h4>Realize seu pedidos que já vamos fazer e providenciar a entrega.</h4>
                 {{--<br />--}}
                 {{--<a href="#" class="btn btn-danger btn-raised btn-lg">--}}
                     {{--<i class="fa fa-play"></i> ¿Cómo funciona?--}}
                 {{--</a>--}}
+
             </div>
         </div>
     </div>
@@ -124,10 +125,10 @@
         {{--</div>--}}
 
         <div class="section text-center">
-            <h2 class="title">Nuestros productos</h2>
+            <h2 class="title">Nossos produtos</h2>
 
-            <form class="form-inline" method="get" action="{{ url('/search') }}">
-                <input type="text" placeholder="¿Qué producto buscas?" class="form-control" name="query" id="search">
+            <form class="form-inline" rows="10" method="get" action="{{ url('/search') }}">
+                <input type="text" placeholder="Qual produto você busca?"  class="form-control" name="query" id="search">
                 <button class="btn btn-primary btn-just-icon" type="submit">
                     <i class="material-icons">search</i>
                 </button>
@@ -138,7 +139,7 @@
                     @foreach ($categories as $category)
                     <div class="col-md-4">
                         <div class="team-player">
-                            <img src="{{ $category->featured_image_url }}" alt="Imagen representativa de la categoría {{ $category->name }}" class="img-raised img-circle">
+                            <img src="{{ $category->featured_image_url }}" alt="Imagem representativa da categoria {{ $category->name }}" class="img-raised img-circle">
                             <h4 class="title">
                                 <a href="{{ url('/categories/'.$category->id) }}">{{ $category->name }}</a>
                             </h4>
@@ -155,19 +156,20 @@
         <div class="section landing-section">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h2 class="text-center title">¿Aún no te has registrado?</h2>
-                    <h4 class="text-center description">Regístrate ingresando tus datos básicos, y podrás realizar tus pedidos a través de nuestro carrito de compras. Si aún no te decides, de todas formas, con tu cuenta de usuario podrás hacer todas tus consultas sin compromiso.</h4>
+                    <h2 class="text-center title">Ainda não possui cadastro no site?</h2>
+                    <h4 class="text-center description">Realize seu cadastro informando seus dados pessoais básicos, e já poderá realizar seus pedidos através de nosso carrinho de compras. Se você estiver em dúvidas quanto a
+                        escolha de seu pedido, através da sua conta de usuário, você pode realizar diversas simulações sem compromisso.</h4>
                     <form class="contact-form" method="get" action="{{ url('/register') }}">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group label-floating">
-                                    <label class="control-label">Nombre</label>
+                                    <label class="control-label">Nome</label>
                                     <input type="text" class="form-control" name="name">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group label-floating">
-                                    <label class="control-label">Correo electrónico</label>
+                                    <label class="control-label">E-mail</label>
                                     <input type="email" class="form-control" name="email">
                                 </div>
                             </div>
@@ -181,7 +183,7 @@
                         <div class="row">
                             <div class="col-md-4 col-md-offset-4 text-center">
                                 <button class="btn btn-primary btn-raised">
-                                    Iniciar registro
+                                    Cadastrar
                                 </button>
                             </div>
                         </div>
@@ -190,6 +192,7 @@
             </div>
 
         </div>
+    </div>
     </div>
 </div>
 

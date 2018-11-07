@@ -25,21 +25,21 @@
                         <div class="header header-primary text-center">
                             <h4>Registro</h4>
                         </div>
-                        <p class="text-divider">Completa tus datos</p>
+                        <p class="text-divider">Informe seus dados</p>
                         <div class="content">
 
                             <div class="input-group">
                                 <span class="input-group-addon">
                                     <i class="material-icons">face</i>
                                 </span>
-                                <input type="text" class="form-control" placeholder="Nombre" name="name"
+                                <input type="text" class="form-control" placeholder="Nome" name="name"
                                        value="{{ old('name', $name) }}" required autofocus>
                             </div>
                             <div class="input-group">
                                 <span class="input-group-addon">
                                     <i class="material-icons">fingerprint</i>
                                 </span>
-                                <input type="text" class="form-control" placeholder="Username" name="username"
+                                <input type="text" class="form-control" placeholder="Usuário" name="username"
                                        value="{{ old('username') }}" required>
                             </div>                            
 
@@ -47,39 +47,39 @@
                                 <span class="input-group-addon">
                                     <i class="material-icons">email</i>
                                 </span>
-                                <input id="email" type="email" placeholder="Correo electrónico" class="form-control" name="email" value="{{ old('email', $email) }}">
+                                <input id="email" type="email" placeholder="e-mail" class="form-control" name="email" value="{{ old('email', $email) }}">
                             </div>
 
                             <div class="input-group">
                                 <span class="input-group-addon">
                                     <i class="material-icons">phone</i>
                                 </span>
-                                <input id="phone" type="phone" placeholder="Teléfono" class="form-control" name="phone" value="{{ old('phone') }}" required>
+                                <input id="phone" type="phone" placeholder="Phone" class="form-control" name="phone" value="{{ old('phone') }}" required>
                             </div>                            
 
                             <div class="input-group">
                                 <span class="input-group-addon">
                                     <i class="material-icons">class</i>
                                 </span>
-                                <input id="address" type="text" placeholder="Dirección" class="form-control" name="address" value="{{ old('address') }}" required>
+                                <input id="address" type="text" placeholder="Endereço" class="form-control" name="address" value="{{ old('address') }}" required>
                             </div>  
 
                             <div class="input-group">
                                 <span class="input-group-addon">
                                     <i class="material-icons">lock_outline</i>
                                 </span>
-                                <input placeholder="Contraseña" id="password" type="password" class="form-control" name="password" required />
+                                <input placeholder="Senha" id="password" type="password" class="form-control" name="password" required />
                             </div>
 
                             <div class="input-group">
                                 <span class="input-group-addon">
                                     <i class="material-icons">lock_outline</i>
                                 </span>
-                                <input placeholder="Confirmar contraseña" type="password" class="form-control" name="password_confirmation" required />
+                                <input placeholder="Confirmar senha" type="password" class="form-control" name="password_confirmation" required />
                             </div>
                         </div>
                         <div class="footer text-center">
-                            <button type="submit" class="btn btn-simple btn-primary btn-lg">Confirmar registro</a>
+                            <button type="submit" class="btn btn-simple btn-primary btn-lg">Cadastrar</button>
                         </div>
                         <!-- <a class="btn btn-link" href="{{ route('password.request') }}">
                             Forgot Your Password? -->

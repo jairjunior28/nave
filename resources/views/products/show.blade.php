@@ -35,11 +35,11 @@
             <div class="text-center">
                 @if (auth()->check())
                     <button class="btn btn-primary btn-round" data-toggle="modal" data-target="#modalAddToCart">
-                        <i class="material-icons">add</i> Añadir al carrito de compras
+                        <i class="material-icons">add</i> ao carrinho de compras
                     </button>
                 @else
                     <a href="{{ url('/login?redirect_to='.url()->current()) }}" class="btn btn-primary btn-round">
-                        <i class="material-icons">add</i> Añadir al carrito de compras
+                        <i class="material-icons">add</i> ao carrinho de compras
                     </a>
                 @endif
             </div> 
@@ -81,7 +81,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Seleccione la cantidad que desea agregar</h4>
+        <h4 class="modal-title" id="myModalLabel">Selecione a quantidade que deseja adicionar</h4>
       </div>
       <form method="post" action="{{ url('/cart') }}">
         {{ csrf_field() }}
@@ -91,7 +91,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Cancelar</button>
-            <button type="submit" class="btn btn-info btn-simple">Añadir al carrito</button>
+            <button type="submit" class="btn btn-info btn-simple">Adicionar ao carrinho</button>
           </div>
       </form>
     </div>

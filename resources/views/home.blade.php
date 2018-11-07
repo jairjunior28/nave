@@ -10,7 +10,7 @@
     <div class="container">
 
         <div class="section">
-            <h2 class="title text-center">Panel de compras</h2>
+            <h2 class="title text-center">Painel de compras</h2>
 
             @if (session('notification'))
                 <div class="alert alert-success">
@@ -22,7 +22,7 @@
                 <li class="active">
                     <a href="#dashboard" role="tab" data-toggle="tab">
                         <i class="material-icons">dashboard</i>
-                        Carrito de compras
+                        Carrinho de compras
                     </a>
                 </li>
                 <li>
@@ -34,20 +34,21 @@
             </ul>
         
             <hr>
-            <p>Tu carrito de compras presenta {{ auth()->user()->cart->details->count() }} productos.</p>
+            <p>Seu carrinho de compras possui {{ auth()->user()->cart->details->count() }} produtos.</p>
 
             <table class="table">
                 <thead>
                     <tr>
                         <th class="text-center">#</th>
-                        <th class="text-center">Nombre</th>
-                        <th>Precio</th>
-                        <th>Cantidad</th>
+                        <th class="text-center">Nome</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
                         <th>SubTotal</th>
-                        <th>Opciones</th>
+                        <th>Opções</th>
                     </tr>
                 </thead>
                 <tbody>
+
                     @foreach (auth()->user()->cart->details as $detail)
                     <tr>
                         <td class="text-center">
@@ -65,7 +66,7 @@
                                 {{ method_field('DELETE') }}
                                 <input type="hidden" name="cart_detail_id" value="{{ $detail->id }}">
                                 
-                                <a href="{{ url('/products/'.$detail->product->id) }}" target="_blank" rel="tooltip" title="Ver producto" class="btn btn-info btn-simple btn-xs">
+                                <a href="{{ url('/products/'.$detail->product->id) }}" target="_blank" rel="tooltip" title="Ver produto" class="btn btn-info btn-simple btn-xs">
                                     <i class="fa fa-info"></i>
                                 </a>
                                 <button type="submit" rel="tooltip" title="Eliminar" class="btn btn-danger btn-simple btn-xs">
@@ -78,14 +79,14 @@
                 </tbody>
             </table>
 
-            <p><strong>Importe a pagar:</strong> {{ auth()->user()->cart->total }}</p>
+            <p><strong>Valor a pagar:</strong> {{ auth()->user()->cart->total }}</p>
 
             <div class="text-center">
                 <form method="post" action="{{ url('/order') }}">
                     {{ csrf_field() }}
                     
                     <button class="btn btn-primary btn-round">
-                        <i class="material-icons">done</i> Realizar pedido
+                        <i class="material-icons"></i> Confirmar Pedido
                     </button>
                 </form>
                 

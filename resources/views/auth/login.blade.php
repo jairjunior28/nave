@@ -12,34 +12,34 @@
                         {{ csrf_field() }}
 
                         <div class="header header-primary text-center">
-                            <h4>Inicio de sesión</h4>
+                            <h4>Inicio de sessão</h4>
                         </div>
-                        <p class="text-divider">Ingresa tus datos</p>
+                        <p class="text-divider">Insira seus dados</p>
                         <div class="content">
 
                             <div class="input-group">
                                 <span class="input-group-addon">
                                     <i class="material-icons">fingerprint</i>
                                 </span>
-                                <input id="username" type="text" placeholder="Username" class="form-control" name="username" value="{{ old('username') }}" required autofocus>
+                                <input id="username" type="text" placeholder="Usuário" class="form-control" name="username" value="{{ old('username') }}" required autofocus>
                             </div>
 
                             <div class="input-group">
                                 <span class="input-group-addon">
                                     <i class="material-icons">lock_outline</i>
                                 </span>
-                                <input placeholder="Contraseña" id="password" type="password" class="form-control" name="password" required />
+                                <input placeholder="Senha" id="password" type="password" class="form-control" name="password" required />
                             </div>
 
                             <div class="checkbox">
                                 <label>
                                     <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}>
-                                    Recordar sesión
+                                    Lembrar sessão
                                 </label>
                             </div>
                         </div>
                         <div class="footer text-center">
-                            <button type="submit" class="btn btn-simple btn-primary btn-lg">Ingresar</button>
+                            <button type="submit" class="btn btn-simple btn-primary btn-lg">Entrar</button>
                         </div>
                         <!-- <a class="btn btn-link" href="{{ route('password.request') }}">
                             Forgot Your Password?

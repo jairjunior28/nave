@@ -27,19 +27,19 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="sr-only">Navegação</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ url('/') }}">Góndola Virtual</a>
+                <a class="navbar-brand" href="{{ url('/') }}"> </a>
             </div>
 
             <div class="collapse navbar-collapse" id="navigation-example">
                 <ul class="nav navbar-nav navbar-right">
                     @guest
-                        <li><a href="{{ route('login') }}">Ingresar</a></li>
-                        <li><a href="{{ route('register') }}">Registro</a></li>
+                        <li><a href="{{ route('login') }}">Entrar</a></li>
+                        <li><a href="{{ route('register') }}">Cadastrar</a></li>
                     @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -48,21 +48,21 @@
 
                             <ul class="dropdown-menu" role="menu">
                                 <li>
-                                    <a href="{{ url('/home') }}">Carrito de compras</a>
+                                    <a href="{{ url('/home') }}">Carrinho de compras</a>
                                 </li>
                                 @if (auth()->user()->admin)
                                 <li>
-                                    <a href="{{ url('/admin/categories') }}">Gestionar categorías</a>
+                                    <a href="{{ url('/admin/categories') }}">Categorias</a>
                                 </li>
                                 <li>
-                                    <a href="{{ url('/admin/products') }}">Gestionar productos</a>
+                                    <a href="{{ url('/admin/products') }}">Produtos</a>
                                 </li>
                                 @endif
                                 <li>
                                     <a href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                                  document.getElementById('logout-form').submit();">
-                                        Cerrar sesión
+                                        Logout
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
