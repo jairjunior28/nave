@@ -1,32 +1,31 @@
-# Aprende Laravel desde cero y desarrolla una aplicación de pedidos
+# Aprenda o Laravel a partir do zero e desenvolva um aplicativo de pedidos
 
-## Introducción
+## Introdução
 
-Este repositorio se corresponde con el curso titulado "Aprende Laravel y desarrolla una app de pedidos en línea".
+Este repositório corresponde ao curso intitulado "Aprenda o Laravel e desenvolva um aplicativo de pedidos on-line".
 
-A continuación puedes ver una presentación en formato de video de lo que aprenderás en el curso.
-
+Abaixo você pode ver uma apresentação em formato de vídeo do que você vai aprender no curso.
 [![Curso de Laravel 5.5](https://udemy-images.udemy.com/course/750x422/1349964_ba4a_3.jpg)](https://www.youtube.com/watch?v=8poZA7FZa0g)
 
-## Contenido
+## Conteúdo
 
-En el curso desarrollamos una versión simplificada de una tienda online, aplicando los conceptos que vamos aprendiendo. 
+No curso, desenvolvemos uma versão simplificada de uma loja online, aplicando os conceitos que estamos aprendendo.
 
-- **Sección 1:** Introducción
-- **Sección 2:** Configuración inicial
-- **Sección 3:** Diseño
-- **Sección 4:** Modelo de datos en Laravel
-- **Sección 5:** Entidades de nuestro proyecto y datos
-- **Sección 6:** Gestión de datos
-- **Sección 7:** Roles y permisos
-- **Sección 8:** Imágenes y gestión de archivos
-- **Sección 9:** Carrito de compras
-- **Sección 10:** Envío de mails y configuración del entorno de producción
-- **Sección 11:** Características finales
-- **Sección 12:** Personalizando el sistema de autenticación
-- **Sección 13:** Y ahora, ¿qué sigue?
+- ** Seção 1: ** Introdução
+- ** Seção 2: ** Configuração inicial
+- ** Seção 3: ** Design
+- ** Seção 4: ** Modelo de dados no Laravel
+- ** Seção 5: ** Entidades do nosso projeto e dados
+- ** Seção 6: ** Gerenciamento de dados
+- ** Seção 7: ** Funções e autorizações
+- ** Seção 8: ** Imagens e gerenciamento de arquivos
+- ** Seção 9: ** Carrinho de Compras
+- ** Seção 10: ** Enviando e-mails e configurando o ambiente de produção
+- ** Seção 11: ** Características finais
+- ** Seção 12: ** Personalizando o sistema de autenticação
+- ** Seção 13: ** E agora, o que vem a seguir?
 
 ## Enlaces
 
-- [Acceder al curso en Udemy](https://www.udemy.com/curso-laravel-5-5-desde-cero-desarrolla-publica-una-app-pedidos/?couponCode=DSCTO_ESPECIAL)
-- [Consultar dudas acerca del curso](http://m.me/programacionymas)
+- [Acesse o curso na Udemy](https://www.udemy.com/curso-laravel-5-5-desde-cero-desarrolla-publica-una-app-pedidos/?couponCode=DSCTO_ESPECIAL)
+- [Consultar dúvidas sobre o curso](http://m.me/programacionymas)
