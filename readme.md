@@ -5,7 +5,7 @@
 Este repositório corresponde ao curso intitulado "Aprenda o Laravel e desenvolva um aplicativo de pedidos on-line".
 
 Abaixo você pode ver uma apresentação em formato de vídeo do que você vai aprender no curso.
-[![Curso de Laravel 5.5](https://udemy-images.udemy.com/course/750x422/1349964_ba4a_3.jpg)](https://www.youtube.com/watch?v=8poZA7FZa0g)
+
 
 ## Conteúdo
 
