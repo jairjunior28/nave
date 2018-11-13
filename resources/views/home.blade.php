@@ -22,7 +22,12 @@
                 <li class="active">
                     <a href="#dashboard" role="tab" data-toggle="tab">
                         <i class="material-icons">dashboard</i>
-                        Carrinho de compras
+                        @if (auth()->user()->admin)
+                            Pedidos
+                        @else
+                            Carrinho de compras
+                        @endif
+
                     </a>
                 </li>
                 <li>
@@ -34,7 +39,7 @@
             </ul>
         
             <hr>
-            <p>Seu carrinho de compras possui {{ auth()->user()->cart->details->count() }} produtos.</p>
+            <p> @if (auth()->user()->admin) O Pedido @else Seu carrinho de compras @endif possui {{ auth()->user()->cart->details->count() }} produtos.</p>
 
             <table class="table">
                 <thead>
@@ -78,6 +83,24 @@
                     @endforeach
                 </tbody>
             </table>
+            @section('scripts')
+            <script language='JavaScript'>
+                function SomenteNumero(e){
+                    var tecla=(window.event)?event.keyCode:e.which;
+                    if((tecla > 47 && tecla < 58)) return true;
+                    else{
+                        if (tecla==8 || tecla==0) return true;
+                        else  return false;
+                    }
+                }
+                $(document).ready(function(){
+                    $('#entrega').mask('9999.99');
+                });
+            </script>
+            @endsection
+            <div class="form-control">
+                <label>Entrega</label><input type="text" name="entrega" onkeypress='return SomenteNumero(event)' >
+            </div>
 
             <p><strong>Valor a pagar:</strong> {{ auth()->user()->cart->total }}</p>
 

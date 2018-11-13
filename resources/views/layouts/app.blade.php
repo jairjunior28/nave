@@ -47,10 +47,15 @@
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
+                                @if (!auth()->user()->admin)
                                 <li>
                                     <a href="{{ url('/home') }}">Carrinho de compras</a>
                                 </li>
+                                @endif
                                 @if (auth()->user()->admin)
+                                <li>
+                                    <a href="{{ url('/home') }}">Pedidos</a>
+                                </li>
                                 <li>
                                     <a href="{{ url('/admin/categories') }}">Categorias</a>
                                 </li>
